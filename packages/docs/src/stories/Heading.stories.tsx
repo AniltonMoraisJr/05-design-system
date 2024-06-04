@@ -7,6 +7,14 @@ export default {
   args: {
     children: 'Example test',
   },
+  argTypes: {
+    size: {
+      options: ['sm', 'md', 'lg', '2xl', '4xl', '5xl', '6xl'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+  },
 } as Meta
 
 export const Primary: StoryObj<HeadingProps> = {}
