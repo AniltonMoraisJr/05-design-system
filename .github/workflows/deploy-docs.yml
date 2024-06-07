@@ -17,12 +17,12 @@ jobs:
         with:
           node-version: 20
 
+      - run: npm ci
+
       - run: npm run build
         env:
           TURBO_TOKEN: QeeSzL54VxMfc2G2LYoAOKop
           TURBO_TEAM: anilton-f-morais-juniors-projects
-
-      - run: npm ci
 
       - name: Deploy storybook
         working-directory: ./packages/docs
